@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Raqeeb Mohammed - Appointment Setter Portfolio</title>
+  <meta name="description" content="Appointment setter portfolio for Raqeeb Mohammed. I book qualified, show-up-ready sales calls via DMs and phone for coaches, agencies & online businesses." />
+  <!-- Tailwind -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- AOS: Animate On Scroll -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- NAVBAR -->
+  <header class="bg-white shadow sticky top-0 z-50" data-aos="fade-down">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="font-bold text-lg">Raqeeb Mohammed</div>
+      <!-- Desktop nav -->
+      <nav class="space-x-4 text-sm font-medium hidden md:block">
+        <a href="#work" class="hover:text-indigo-600">Work</a>
+        <a href="#services" class="hover:text-indigo-600">Services</a>
+        <a href="#process" class="hover:text-indigo-600">Process</a>
+        <a href="#about" class="hover:text-indigo-600">About</a>
+        <a href="#testimonials" class="hover:text-indigo-600">Testimonials</a>
+        <a href="#faq" class="hover:text-indigo-600">FAQ</a>
+        <a href="#contact" class="bg-indigo-600 text-white px-3 py-2 rounded-lg">Book a Call</a>
+      </nav>
+      <!-- Mobile menu button -->
+      <button id="menuBtn" class="md:hidden inline-flex items-center justify-center p-2 rounded border" aria-label="Open menu">
+        <span>☰</span>
+      </button>
+    </div>
+    <!-- Mobile dropdown -->
+    <div id="mobileMenu" class="md:hidden hidden border-t">
+      <div class="container mx-auto px-4 py-2 grid gap-2 text-sm">
+        <a href="#work" class="py-2">Work</a>
+        <a href="#services" class="py-2">Services</a>
+        <a href="#process" class="py-2">Process</a>
+        <a href="#about" class="py-2">About</a>
+        <a href="#testimonials" class="py-2">Testimonials</a>
+        <a href="#faq" class="py-2">FAQ</a>
+        <a href="#contact" class="py-2 bg-indigo-600 text-white text-center rounded-lg">Book a Call</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO (full width, no image) -->
+  <section class="container mx-auto px-4 pt-10 pb-12 text-center">
+    <div class="max-w-3xl mx-auto">
+      <h1 data-aos="fade-up" class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+        I fill calendars with <span class="text-indigo-600">qualified, show-up-ready</span> sales calls for coaches, agencies & online businesses.
+      </h1>
+      <p data-aos="fade-up" data-aos-delay="100" class="mt-4 text-gray-700 text-lg">
+        I run genuine DM conversations and quick discovery calls, qualify for fit and readiness, then book the closer’s calendar with prospects who actually attend.
+      </p>
+
+      <!-- NEW: Intro Video (click to play) -->
+      <h3 data-aos="fade-up" data-aos-delay="160" class="mt-8 text-xl font-semibold text-gray-900">🎥 Watch My Introduction Video</h3>
+      <div data-aos="zoom-in" data-aos-delay="220" class="mt-4 max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-lg border border-indigo-100">
+        <video class="w-full" controls preload="metadata">
+          <source src="Appointment Setting loom video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div data-aos="fade-up" data-aos-delay="300" class="mt-8 flex flex-col sm:flex-row justify-center items-center space-y-3 sm:space-y-0 sm:space-x-4">
+        <a href="#contact" class="bg-indigo-600 text-white px-6 py-3 rounded-lg text-lg font-medium hover:bg-indigo-700 transition">Book a Call</a>
+        <a href="#work" class="px-6 py-3 rounded-lg border text-lg font-medium hover:bg-gray-100 transition">See Results</a>
+      </div>
+
+      <div class="mt-10 grid grid-cols-3 gap-6 text-center">
+        <div data-aos="zoom-in" data-aos-delay="0" class="bg-white rounded-xl p-5 shadow">
+          <div class="text-3xl font-bold">613+</div>
+          <div class="text-sm text-gray-500">Qualified calls booked</div>
+        </div>
+        <div data-aos="zoom-in" data-aos-delay="120" class="bg-white rounded-xl p-5 shadow">
+          <div class="text-3xl font-bold">79%</div>
+          <div class="text-sm text-gray-500">Average show-up rate</div>
+        </div>
+        <div data-aos="zoom-in" data-aos-delay="240" class="bg-white rounded-xl p-5 shadow">
+          <div class="text-3xl font-bold">100+/mo</div>
+          <div class="text-sm text-gray-500">Monthly qualified bookings</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK / CASE STUDIES (SAAS Scale first, Gizmo Lab second) -->
+  <section id="work" class="container mx-auto px-4 py-12">
+    <h2 data-aos="fade-up" class="text-3xl font-bold mb-6">Work & Results</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <!-- SAAS Scale -->
+      <article data-aos="fade-up" class="bg-white rounded-2xl p-6 shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold">SAAS Scale</h3>
+        <p class="text-gray-600 text-sm mt-1">Ads Agency – We help software companies book demos and get customers through paid ads.</p>
+        <div class="mt-4 grid grid-cols-3 gap-3 text-center">
+          <div class="bg-gray-50 rounded-lg p-3">
+            <div class="font-bold">100+</div>
+            <div class="text-xs text-gray-500">Qualified bookings / month</div>
+          </div>
+          <div class="bg-gray-50 rounded-lg p-3">
+            <div class="font-bold">78%</div>
+            <div class="text-xs text-gray-500">Show rate</div>
+          </div>
+          <div class="bg-gray-50 rounded-lg p-3">
+            <div class="font-bold">2.2x</div>
+            <div class="text-xs text-gray-500">Pipeline growth</div>
+          </div>
+        </div>
+        <ul class="mt-4 space-y-2 text-sm list-disc list-inside">
+          <li><strong>Context:</strong> Leads from IG DMs and Ads campaigns.</li>
+          <li><strong>Bottleneck:</strong> Low reply rate and many unqualified leads.</li>
+          <li><strong>What I did:</strong> Optimized opener scripts for higher replies, added qualification sequence, and improved pre-call reminders.</li>
+          <li><strong>Outcome:</strong> Increased qualified bookings and reduced no-shows, boosting pipeline.</li>
+        </ul>
+      </article>
+
+      <!-- Gizmo Lab -->
+      <article data-aos="fade-up" data-aos-delay="120" class="bg-white rounded-2xl p-6 shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold">Gizmo Lab · Web3 Business Support</h3>
+        <p class="text-gray-600 text-sm mt-1">DM Setting · Instagram</p>
+        <div class="mt-4 grid grid-cols-3 gap-3 text-center">
+          <div class="bg-gray-50 rounded-lg p-3">
+            <div class="font-bold">100+</div>
+            <div class="text-xs text-gray-500">Qualified bookings / month</div>
+          </div>
+          <div class="bg-gray-50 rounded-lg p-3">
+            <div class="font-bold">79%</div>
+            <div class="text-xs text-gray-500">Show rate</div>
+          </div>
+          <div class="bg-gray-50 rounded-lg p-3">
+            <div class="font-bold">2x</div>
+            <div class="text-xs text-gray-500">Pipeline growth</div>
+          </div>
+        </div>
+        <ul class="mt-4 space-y-2 text-sm list-disc list-inside">
+          <li><strong>Context:</strong> Leads from IG DMs in the Web3 niche.</li>
+          <li><strong>Bottleneck:</strong> Slow follow-ups causing drop-offs.</li>
+          <li><strong>What I did:</strong> Implemented rapid-response follow-up system, added 3-question fit check, and tightened booking confirmation with reminders.</li>
+          <li><strong>Outcome:</strong> Faster conversion, higher show-up, and increased pipeline.</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="bg-white">
+    <div class="container mx-auto px-4 py-12">
+      <h2 data-aos="fade-up" class="text-3xl font-bold mb-6">Services</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div data-aos="fade-right" class="rounded-2xl p-6 border bg-gray-50 hover:shadow-md transition">
+          <h3 class="text-xl font-semibold">DM Setting</h3>
+          <ul class="mt-3 space-y-2 text-sm list-disc list-inside">
+            <li>Inbox triage & genuine, brand-voice conversations</li>
+            <li>3-question qualification: motivation · fit · readiness</li>
+            <li>Calendar booking + reminder flow (24h / 2h / 15m)</li>
+            <li>Daily reporting and clean handoff notes for closers</li>
+          </ul>
+        </div>
+        <div data-aos="fade-left" class="rounded-2xl p-6 border bg-gray-50 hover:shadow-md transition">
+          <h3 class="text-xl font-semibold">Phone Setting</h3>
+          <ul class="mt-3 space-y-2 text-sm list-disc list-inside">
+            <li>3–5 minute discovery to confirm goals & urgency</li>
+            <li>Qualification incl. resource check (investment readiness)</li>
+            <li>Book while live on the call; confirm show-up</li>
+            <li>CRM hygiene: tags, next actions, and notes</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <div data-aos="fade-right" data-aos-delay="100" class="rounded-2xl p-6 border hover:shadow-md transition">
+          <h3 class="text-lg font-semibold">Add-Ons</h3>
+          <ul class="mt-3 space-y-2 text-sm list-disc list-inside">
+            <li>Follow-up Management (revive stalled leads)</li>
+            <li>CRM Cleanup (pipeline stages, tags, tracking)</li>
+            <li>Objection Vault & Script Optimization</li>
+          </ul>
+        </div>
+        <div data-aos="fade-left" data-aos-delay="100" class="rounded-2xl p-6 border hover:shadow-md transition">
+          <h3 class="text-lg font-semibold">Best Fit</h3>
+          <p class="mt-3 text-sm text-gray-700">Coaches, agencies, and online service brands with steady leads who want higher show rates and clearer pipeline.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process" class="container mx-auto px-4 py-12">
+    <h2 data-aos="fade-up" class="text-3xl font-bold mb-6">How I Work</h2>
+    <div class="grid md:grid-cols-4 gap-6">
+      <div data-aos="fade-up" class="bg-white rounded-2xl p-6 shadow hover:shadow-lg transition">
+        <div class="text-sm font-semibold text-indigo-700">01 · Align</div>
+        <p class="text-sm text-gray-700 mt-2">Clarify offer, ideal client, lead sources, calendar rules, and success metrics.</p>
+        <ul class="mt-3 text-xs text-gray-600 space-y-1 list-disc list-inside">
+          <li>ICP & disqualifiers</li>
+          <li>Scheduling windows & no-show policy</li>
+        </ul>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="120" class="bg-white rounded-2xl p-6 shadow hover:shadow-lg transition">
+        <div class="text-sm font-semibold text-indigo-700">02 · Qualify</div>
+        <p class="text-sm text-gray-700 mt-2">Run DM or 3–5 min discovery: motivation, fit, investment readiness.</p>
+        <ul class="mt-3 text-xs text-gray-600 space-y-1 list-disc list-inside">
+          <li>3-question fit check</li>
+          <li>Light budget reality check</li>
+        </ul>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="240" class="bg-white rounded-2xl p-6 shadow hover:shadow-lg transition">
+        <div class="text-sm font-semibold text-indigo-700">03 · Book</div>
+        <p class="text-sm text-gray-700 mt-2">Offer 2–3 slots, book while live, send confirmation + reminders.</p>
+        <ul class="mt-3 text-xs text-gray-600 space-y-1 list-disc list-inside">
+          <li>Reminders: 24h · 2h · 15m</li>
+          <li>Pre-call notes for closer</li>
+        </ul>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="360" class="bg-white rounded-2xl p-6 shadow hover:shadow-lg transition">
+        <div class="text-sm font-semibold text-indigo-700">04 · Report</div>
+        <p class="text-sm text-gray-700 mt-2">Daily KPIs and insights to improve reply, set, and show rates.</p>
+        <ul class="mt-3 text-xs text-gray-600 space-y-1 list-disc list-inside">
+          <li>Speed-to-first-touch ≤ 10m</li>
+          <li>100% next-action in CRM</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT ME -->
+  <section id="about" class="container mx-auto px-4 py-12">
+    <h2 data-aos="fade-up" class="text-3xl font-bold mb-6">About Me</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="md:col-span-2" data-aos="fade-up">
+        <p class="text-gray-700">I’m Raqeeb Mohammed, an appointment setter who helps businesses consistently fill their calendars with qualified, show-up-ready calls. I began my studies in Canada before moving to Dubai, where I now focus full-time on building online business opportunities. With discipline, strong work ethics, and genuine passion for connecting people, I deliver reliable results for my clients.</p>
+        <ul class="mt-4 space-y-2 text-sm list-disc list-inside">
+          <li><strong>Languages:</strong> English, Hindi</li>
+          <li><strong>Tools:</strong> GoHighLevel, Calendly, Notion, ManyChat, CRM</li>
+          <li><strong>Strengths:</strong> Discipline, reliability, adaptability across industries, and clear communication</li>
+        </ul>
+      </div>
+      <div data-aos="fade-left" class="bg-white rounded-2xl p-6 shadow">
+        <h3 class="font-semibold">Core KPIs</h3>
+        <ul class="mt-2 text-sm space-y-2">
+          <li>Speed-to-first-touch: <strong>≤10m</strong></li>
+          <li>Show rate target: <strong>70%+</strong></li>
+          <li>Pipeline hygiene: <strong>100% next action logged</strong></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="bg-indigo-50">
+    <div class="container mx-auto px-4 py-12">
+      <h2 data-aos="fade-up" class="text-3xl font-bold mb-6">Testimonials</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- SAAS Scale-style quote (first) -->
+        <blockquote data-aos="fade-up" class="bg-white rounded-2xl p-6 shadow">
+          <p class="text-gray-800">“Working with Raqeeb was seamless. He understood our needs, adapted to our brand voice, and increased our reply rates significantly. The handoff to closers was smooth and our pipeline results improved immediately.”</p>
+          <footer class="mt-3 text-sm text-gray-600">— SaaS Scale</footer>
+        </blockquote>
+        <!-- Gizmo Lab-style quote (second) -->
+        <blockquote data-aos="fade-up" data-aos-delay="120" class="bg-white rounded-2xl p-6 shadow">
+          <p class="text-gray-800">“Raqeeb was consistent, disciplined, and very professional. He improved our follow-up speed and filled our calendar with qualified leads who actually showed up. Highly recommend him to any business needing more sales conversations.”</p>
+          <footer class="mt-3 text-sm text-gray-600">— Gizmo Lab</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="container mx-auto px-4 py-12">
+    <h2 data-aos="fade-up" class="text-3xl font-bold mb-6">FAQ</h2>
+    <div class="space-y-6">
+      <div data-aos="fade-up">
+        <h3 class="font-semibold">What industries do you set for?</h3>
+        <p class="text-sm text-gray-700 mt-2">I work with coaches, agencies, online service providers, and businesses that generate steady leads. If you have a closer and qualified prospects, I can help fill your calendar.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="100">
+        <h3 class="font-semibold">How do you charge?</h3>
+        <p class="text-sm text-gray-700 mt-2">I usually work on a flexible model — base pay plus performance incentives (per show and/or per sale). This way my success is tied directly to your results.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="200">
+        <h3 class="font-semibold">What tools do you use?</h3>
+        <p class="text-sm text-gray-700 mt-2">I’m comfortable with GoHighLevel, Calendly, Aircall, ManyChat and Notion. I keep notes and scripts organized in Google Sheets for transparency.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="300">
+        <h3 class="font-semibold">What makes you different from other setters?</h3>
+        <p class="text-sm text-gray-700 mt-2">I prioritize speed-to-first-touch (≤10 minutes), adapt to your brand voice in every conversation, and maintain 100% pipeline hygiene so your closers always get clear, reliable notes.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="400">
+        <h3 class="font-semibold">Can you also handle follow-ups and nurturing?</h3>
+        <p class="text-sm text-gray-700 mt-2">Yes — I re-engage cold or stalled leads through structured follow-up, helping you recover opportunities that might otherwise be lost.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="500">
+        <h3 class="font-semibold">Do you work in specific time zones?</h3>
+        <p class="text-sm text-gray-700 mt-2">I’m based in Dubai but work remotely with clients worldwide and can adapt my schedule to your team’s operating hours.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="container mx-auto px-4 py-12">
+    <h2 data-aos="fade-up" class="text-3xl font-bold mb-6">Let’s Talk</h2>
+    <p data-aos="fade-up" data-aos-delay="100" class="text-lg text-gray-700">Grab a time for a quick intro call — or reach me directly below.</p>
+
+    <div class="mt-8 grid md:grid-cols-2 gap-8">
+      <!-- Calendly embed -->
+      <div data-aos="fade-right" class="order-2 md:order-1">
+        <div class="calendly-inline-widget" data-url="https://calendly.com/mohammedraqeeb619/appointment-setter" style="min-width:320px;height:700px;"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      </div>
+
+      <!-- Contact Info Card -->
+      <div data-aos="fade-left" class="bg-gradient-to-b from-indigo-50 to-white rounded-2xl p-10 shadow order-1 md:order-2 flex flex-col justify-center">
+        <h3 class="text-3xl font-semibold text-indigo-700 mb-5">Let’s Connect</h3>
+        <p class="text-gray-700 text-base mb-8 leading-relaxed">
+          Whether you’d like to collaborate, discuss a project, or just say hi — feel free to reach out anytime
+        </p>
+
+        <ul class="space-y-5 text-base">
+          <!-- Email -->
+          <li class="flex items-center space-x-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m8-4H8m8 8H8m-4 0a2 2 0 01-2-2V6a2 2 0 012-2h16a2 2 0 012 2v12a2 2 0 01-2 2H4z" />
+            </svg>
+            <a href="mailto:mohammedraqeeb619@gmail.com" class="text-indigo-600 hover:text-indigo-800 underline break-all text-lg">mohammedraqeeb619@gmail.com</a>
+          </li>
+
+          <!-- Instagram -->
+          <li class="flex items-center space-x-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+            </svg>
+            <a href="https://www.instagram.com/moh.raq?igsh=MWplcGE1M3g5OXp3ag==" target="_blank" rel="noreferrer" class="text-indigo-600 hover:text-indigo-800 underline text-lg">@moh.raq</a>
+          </li>
+        </ul>
+
+        <div class="mt-10 flex space-x-4">
+          <a class="inline-block bg-indigo-600 text-white px-6 py-3 text-lg rounded-lg shadow hover:bg-indigo-700 transition" href="mailto:mohammedraqeeb619@gmail.com">Email Me</a>
+          <a class="inline-block border border-indigo-600 text-indigo-600 px-6 py-3 text-lg rounded-lg hover:bg-indigo-50 transition" href="https://www.instagram.com/moh.raq?igsh=MWplcGE1M3g5OXp3ag==" target="_blank" rel="noreferrer">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-300" data-aos="fade-up">
+    <div class="container mx-auto px-4 py-8 text-sm flex flex-col md:flex-row md:items-center md:justify-between space-y-3 md:space-y-0">
+      <p>© 2025 Raqeeb Mohammed · Appointment Setter</p>
+    </div>
+  </footer>
+
+  <!-- AOS script -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 700,
+      easing: 'ease-out',
+      once: true,
+      offset: 80
+    });
+  </script>
+
+  <!-- Mobile menu toggle -->
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+      mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', ()=> mobileMenu.classList.add('hidden')));
+    }
+  </script>
+
+</body>
+</html>
